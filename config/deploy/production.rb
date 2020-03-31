@@ -1,4 +1,4 @@
-set :stage, :staging
+set :stage, :production
 
 # Simple Role Syntax
 # ==================
@@ -37,7 +37,7 @@ fetch(:default_env).merge!(wp_env: :staging)
 
 
 
-set :wpcli_remote_url, @secrets_yml['topolina_url']
+set :wpcli_remote_url, @secrets_yml['production_url']
 set :wpcli_local_url, @secrets_yml['dev_url']
 
 set :local_tmp_dir, '/tmp'

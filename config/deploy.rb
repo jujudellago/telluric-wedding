@@ -102,6 +102,8 @@ namespace :deploy do
     on roles(:web) do
       execute :find, release_path.to_s, ' -type d -name  "*" -exec chmod 755 {} \;'
       execute :find, release_path.to_s, ' -type f -name  "*" -exec chmod 644 {} \;'
+      execute :chmod, release_path.to_s+"/web/app/themes/bridge/js", ' 777 '
+      execute :chmod, release_path.to_s+"/web/app/themes/bridge/css", ' 777 '
       # execute "/bin/sh /set_staging.sh"
     end
   end

@@ -1,5 +1,5 @@
-set :application, 'cabinetsens'
-set :repo_url, 'git@github.com:jujudellago/cabinetsens.git'
+set :application, 'telluric-wedding'
+set :repo_url, 'git@github.com:jujudellago/telluric-wedding.git'
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)

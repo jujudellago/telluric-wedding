@@ -1,4 +1,4 @@
-set :stage, :production
+set :stage, :staging
 
 # Simple Role Syntax
 # ==================
@@ -8,73 +8,46 @@ set :stage, :production
 
 # Extended Server Syntax
 # ======================
-#server '127.0.0.1', user: 'juju', roles: %w{web app db}
-server "80.74.149.209", user: 'ftpcab40490', roles: %w{web app db}, port: 2121
+server "79.137.41.46", user: 'deploy', roles: %w{web app db}
 
-#set :tmp_dir, "/home/clients/d9e7a0ab00bb20eac180d94da2fe2de6/tmp"
+
+#SSHKit.config.command_map[:composer] = "/usr/local/php55/bin/php /home/terolabs/utils/php/composer/composer.phar"
+
+SSHKit.config.command_map[:wp] ="~/bin/wp.sh"
 
 set :tmp_dir, "/tmp"
+set :linked_files, fetch(:linked_files, []).push('.env','web/app/db.php', 'web/app/object-cache.php', 'web/app/advanced-cache.php')
 
-
-set :deploy_to, -> { "/bedrock/production" }
-#SSHKit.config.command_map[:bash] = "source"
-
-#SSHKit.config.shell = "source"
-
-#SSHKit.config.command_map[:composer] = "php /Users/juju/utils/php/composer/composer.phar"
-#SSHKit.config.command_map[:composer] = "php /home/gsprojet/utils/php/composer/composer.phar"
-
+set :deploy_to, -> { "/var/www/telluric-wedding" }
 
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
 # you can see them in [net/ssh documentation](http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start)
 # set it globally
-# set :ssh_options, {
-#   keys: %w(~/.ssh/id_rsa),
-#   forward_agent: true,
-#   auth_methods: %w(password)
-# }
+#  set :ssh_options, {
+#    keys: %w(~/.ssh/id_rsa),
+#    forward_agent: false,
+#    auth_methods: %w(password)
+#  }
 
-fetch(:default_env).merge!(wp_env: :production)
+fetch(:default_env).merge!(wp_env: :staging)
 
-set :wpcli_remote_url, @secrets_yml['production_url']
+#set :wpcli_rsync_options, '-avz -e "ssh -p 2222"' 
+
+
+
+set :wpcli_remote_url, @secrets_yml['topolina_url']
 set :wpcli_local_url, @secrets_yml['dev_url']
 
-set :local_tmp_dir, '/Users/juju/tmp'
+set :local_tmp_dir, '/tmp'
 set :wpcli_backup_db, true
 set :wpcli_local_db_backup_dir, 'config/backups'
 set :wpcli_local_uploads_dir, 'web/app/uploads/'
 set :wpcli_remote_uploads_dir, "#{shared_path.to_s}/web/app/uploads/"
 
-set :wpcli_args, "--skip-plugins=wp_redirect,w3-total-cache"
-set :linked_files, fetch(:linked_files, []).push('.env','web/.htaccess')
 
 
-namespace :deploy do
-  before :starting, :remove_previous_path do
-    on roles(:web) do
-      execute :rsync, "-av", "/bedrock/production/current/web/app/uploads", "/bedrock/production/shared/web/app/"
-      execute :mv, "/bedrock/production/current", "/bedrock/production/current_previous"
-    end
-  end
-end
-# or define in block
-namespace :deploy do
-  after :finishing, :notify do
-    #
-    on roles(:web) do
-      execute :sh, "/set_production.sh"
-    end
-  end
-end
 
-#namespace :deploy do
-#  task :export_db do
-#    on roles(:web) do
-#      execute :wp, release_path.to_s, ' db export'
-#    end
-#  end
-#end
-#
-#after "deploy:updated", "deploy:export_db"
+
+

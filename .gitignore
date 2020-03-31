@@ -1,6 +1,11 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
+!web/app/plugins/js_composer
+!web/app/plugins/revslider
+!web/app/plugins/revslider-beforeafter-addon
+!web/app/plugins/revslider-particles-addon
+!web/app/plugins/revslider-snow-addon
 web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*

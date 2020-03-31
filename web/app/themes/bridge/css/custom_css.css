@@ -1,0 +1,156 @@
+
+
+
+
+
+.carousel-inner .slider_content .text .qbutton {
+    margin: 23px 0 0;
+}
+
+.footer_top .widget_nav_menu ul li {
+    padding: 0;
+}
+
+.qode-instagram-feed li {
+    padding: 0 1px!important;
+    margin: 0 0 2px!important;
+}
+
+.footer_top h5 {
+    margin: 0 0 19px;
+}
+
+.shopping_cart_header .header_cart {
+    background-image: url('https://bridge45.qodeinteractive.com/wp-content/uploads/2016/06/shopping-cart-light.png');
+    background-size: 28px 31px;
+    width: 28px;
+    height: 31px;
+}
+
+.shopping_cart_header .header_cart span {
+    line-height: 37px;
+    width: 28px;
+    color: #ffffff;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+header:not(.with_hover_bg_color) nav.main_menu > ul > li:hover > a{
+    opacity: 1;
+}
+
+nav.main_menu ul li a span.underline_dash{
+    bottom: -13%;
+}
+
+.header_bottom_right_widget_holder {
+    padding: 0 9px 0 10px;
+}
+
+.wpcf7 form.wpcf7-form p {
+    margin-bottom: 3px;
+}
+
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]) {
+    margin-top: 8px;
+}
+
+.q_accordion_holder.accordion.boxed .ui-accordion-header {
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 900;
+    font-family: 'Arial', sans-serif;
+}
+
+.q_accordion_holder.accordion h6.ui-accordion-header {
+    padding-top: 16px;
+    padding-bottom: 17px;
+}
+
+.woocommerce ul.products li.product .product-categories a {
+    font-weight: 900;
+    color: #0688cd !important;
+}
+
+.woocommerce ul.products li.product .product-categories {
+    margin-top: 26px;
+}
+
+.woocommerce ul.products li.product .product-categories a:hover {
+    color: #22A3E8 !important;
+}
+
+.woocommerce ul.products li.product a.product-category.product-info, .woocommerce-page ul.products li.product a.product-category.product-info {
+    padding-top: 0;
+}
+
+h4, .woocommerce ul.products li.product h6 {
+    margin: 4px 0 0;
+}
+
+.woocommerce ul.products li.product a.qbutton, .woocommerce ul.products li.product .added_to_cart {
+    padding: 0 32px;
+}
+
+.woocommerce div.product div.product_meta>span, .woocommerce div.product div.product_meta>.social_share_list_holder>span, .woocommerce table.shop_attributes th {
+    font-weight: 900;
+}
+
+.woocommerce div.product div.product_meta > span span, .woocommerce div.product div.product_meta > span a, .social_share_list_holder ul li i {
+    color: #1c1c1c;
+}
+
+.woocommerce div.product .product_meta {
+    line-height: 32px;
+}
+
+.woocommerce div.product .cart {
+    margin: 35px 0;
+}
+
+.woocommerce div.product .product_meta {
+    margin: 25px 0 37px 0;
+}
+
+.woocommerce #reviews h2, .woocommerce #respond #reply-title {
+    letter-spacing: 0px;
+}
+
+.woocommerce-page input[type="submit"] {
+    color: #fff;
+}
+
+.woocommerce #submit:hover {
+    background-color: #22A3E8;
+    border-color: #22A3E8;
+}
+
+@media only screen and (max-width: 600px) {
+.title.title_size_medium h1 {
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: -1.6px;
+}
+}
+
+.woocommerce .woocommerce-result-count, .woocommerce .woocommerce-ordering, .woocommerce-review-link, .woocommerce div.product div.product_meta > span span, .woocommerce div.product div.product_meta > span a, .woocommerce-page table tr:nth-child(odd) td, .woocommerce table tr td, .shopping_cart_dropdown .cart_list span.quantity, .shopping_cart_dropdown ul li a, .woocommerce .select2-results .select2-result-label, .woocommerce-page .select2-results .select2-result-label {
+    font-family: 'Arial', sans-serif;
+}
+
+ .woocommerce ul.products li.product .added_to_cart {
+   font-family: 'Arial Black', sans-serif;
+}
+
+.woocommerce table.cart td.actions input[type="submit"], .woocommerce input#place_order, .woocommerce-page input[type="submit"], .woocommerce .button{
+    line-height: 58px;
+}
+
+.woocommerce table.cart td.actions input[type="submit"]::-moz-focus-inner, .woocommerce input#place_order::-moz-focus-inner, .woocommerce-page input[type="submit"]::-moz-focus-inner, .woocommerce .button::-moz-focus-inner{
+    border: 0;
+}
+
+ .full_width {
+position: relative;
+}

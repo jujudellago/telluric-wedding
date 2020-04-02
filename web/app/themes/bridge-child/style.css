@@ -40,9 +40,11 @@ p {
 	padding: 30px 15px;
 
 }	
-#bbpress-forums a,
+#bbpress-forums a{
+	color:#1b1b1b;
+}
 .whitebox a{
-	color:#141414;
+	color:#00a3b6;
 }
 
 #bbpress-forums::after,

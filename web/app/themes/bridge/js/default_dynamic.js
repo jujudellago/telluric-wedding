@@ -53,7 +53,7 @@ function initialize() {
     {
       stylers: [
 				{hue: "#10393f" },
-				{saturation: "30"},
+				{saturation: "15"},
 				{lightness: "-20"},
 				{gamma: 1.51}
 			]
@@ -65,7 +65,7 @@ function initialize() {
 	geocoder = new google.maps.Geocoder();
 	var latlng = new google.maps.LatLng(-34.397, 150.644);
 	var myOptions = {
-		zoom: 12,
+		zoom: 11,
 				scrollwheel: false,
 				center: latlng,
 		zoomControl: true,
@@ -119,7 +119,7 @@ function codeAddress(data) {
 			var marker = new google.maps.Marker({
 				map: map, 
 				position: results[0].geometry.location,
-								icon:  'http://telluric.yabo-sites.loc/wp-content/themes/bridge/img/pin.png',
+								icon:  'http://telluric.yabo-sites.loc/app/uploads/2020/04/map_pointer.png',
 								title: data['store_title']
 			});
 			google.maps.event.addListener(marker, 'click', function() {

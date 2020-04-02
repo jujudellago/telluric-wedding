@@ -42,6 +42,8 @@
     "roots/wp-password-bcrypt": "1.0.0",
 	"wpackagist-plugin/obfuscate-email" : "*",
 		"wpackagist-plugin/really-simple-ssl" : "*",
+			"wpackagist-plugin/bm-custom-login": "*",
+				"wpackagist-plugin/cms-tree-page-view" : "*",
 		"wpackagist-plugin/bbpress" : "*",
 				"wpackagist-plugin/custom-fonts" : "*",
 		"wpackagist-plugin/contact-form-7" : "*",
@@ -59,11 +61,6 @@
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
-	"dropin-paths": {
-	        "web/app/languages/": ["vendor:koodimonni-language"],
-	        "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
-	        "web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
-	      },
     "wordpress-install-dir": "web/wp"
   },
   "scripts": {

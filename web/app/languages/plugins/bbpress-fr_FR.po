@@ -1,18 +1,19 @@
-# Translation of Plugins - bbPress - Stable (latest release) in French (France)
-# This file is distributed under the same license as the Plugins - bbPress - Stable (latest release) package.
+# Copyright (C) 2020 The bbPress Contributors
+# This file is distributed under the GPLv2 or later (license.txt).
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-31 16:17+0700\n"
+"Project-Id-Version: bbPress 2.6.4\n"
+"Report-Msgid-Bugs-To: https://bbpress.trac.wordpress.org\n"
+"POT-Creation-Date: 2020-01-30 12:33:55+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"PO-Revision-Date: 2020-04-01 11:27+0700\n"
+"Language-Team: ENGLISH <jjj@bbpress.org>\n"
 "X-Generator: Poedit 2.3\n"
-"Language: fr\n"
-"Project-Id-Version: Plugins - bbPress - Stable (latest release)\n"
-"POT-Creation-Date: \n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
 
 #: bbpress.php:796
 msgid "bbPress User Activity"

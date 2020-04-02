@@ -281,7 +281,7 @@
 
     body{
     	    	    	font-family: 'Raleway', sans-serif;
-    	    	 color: #868686;     	 font-size: 18px;     	font-weight: 400;    }
+    	    	 color: #555555;     	 font-size: 18px;     	font-weight: 400;    }
             body,
 		.wrapper,
         .content,
@@ -300,6 +300,18 @@
 		}
 				
     
+    .transparent_content,
+	.transparent_content.overlapping_content .content .content_inner > .container,
+	.transparent_content.overlapping_content .content .content_inner > .full_width > .full_width_inner{
+		
+					background-image: url('http://telluric.yabo-sites.loc/app/uploads/2020/03/title_area_bng.jpg');
+			background-attachment: fixed;
+			background-position: center 0px;
+			background-repeat: no-repeat;
+		
+		
+		}
+
 
 
 .header_bottom,
@@ -472,7 +484,7 @@ nav.mobile_menu ul li h3{
 		.header_bottom,
 		nav.mobile_menu,
 		header.fixed_top_header .top_header{
-			background-color: #006883 !important;
+			background-color: #008097 !important;
 		}
 	}
 	#respond textarea,
@@ -499,7 +511,7 @@ nav.mobile_menu ul li h3{
 h1,
 .h1,
 .title h1 {
-			font-family: 'Oswald', sans-serif;
+		color: #c3d8dd; 		font-family: 'Lato', sans-serif;
 		font-size: 51px; 			font-weight: 500;     letter-spacing: 3px;     text-transform: none; }
 .title h1{
 	color: #ffffff; 				font-style: normal; 		}
@@ -510,17 +522,20 @@ h1,
 h2,
 .h2,
 h2 a{
-				font-family: 'Oswald', sans-serif;
-		font-size: 45px; 	line-height: 43px; 	font-style: normal; 	font-weight: 300;     letter-spacing: 2px; 	text-transform: none; }
+	color: #b8d5dd; 		font-size: 45px; 	line-height: 43px; 	font-style: normal; 	font-weight: 500;     letter-spacing: 2px; 	text-transform: none; }
 h3,
 .h3,
 h3 a{
-			font-family: 'Raleway', sans-serif;
-		font-size: 28px; 	line-height: 28px; 	font-style: normal; 	font-weight: 400;     	text-transform: none; }
+	color: #b8d5dd; 		font-size: 28px; 	line-height: 28px; 	font-style: normal; 	font-weight: 500;     	text-transform: none; }
 h4,
 .h4,
 h4 a{
-	color: #131313; 		font-size: 23px; 	line-height: 30px; 	font-style: normal; 	font-weight: 400;     letter-spacing: -1.6px; 	text-transform: none; }
+	color: #b8d5dd; 		font-size: 23px; 	line-height: 30px; 	font-style: normal; 	font-weight: 500;     letter-spacing: -1.6px; 	text-transform: none; }
+h5,
+.h5,
+h5 a,
+.q_icon_with_title .icon_text_holder h5.icon_title{
+	color: #b8d5dd; 					    	}
 h6,
 .h6,
 h6 a {
@@ -528,7 +543,7 @@ h6 a {
 		font-size: 12px; 		font-style: normal;  			text-transform: none; }
 
     p{
-    	color: #868686;    	    		font-family: 'Roboto', sans-serif;
+    	color: #555555;    	    		font-family: 'Roboto', sans-serif;
     	    	font-size: 18px;    	line-height: 25px;    	font-style: normal;    	font-weight: 400;    	    	    }
     .filter_holder ul li span,
     blockquote h5,
@@ -559,7 +574,7 @@ h6 a {
     .side_menu #lang_sel_list.lang_sel_list_horizontal a,
     .side_menu #lang_sel_list.lang_sel_list_vertical a,
     #lang_sel_footer a{
-    	color: #868686;    }
+    	color: #555555;    }
     .header_top #lang_sel > ul > li > a, 
     .header_top #lang_sel_click > ul > li> a,
     footer #lang_sel ul li a,
@@ -573,8 +588,30 @@ h6 a {
     section.side_menu #lang_sel_click > ul > li > a,
     section.side_menu #lang_sel_click ul ul a,
     section.side_menu #lang_sel_click ul ul a:visited{
-    	color: #868686 !important;    }
-    
+    	color: #555555 !important;    }
+    a, p a{
+	color: #ffffff;			}
+
+	 	h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,
+	.q_icon_with_title .icon_with_title_link,
+	.blog_holder article .post_description a:hover,
+	.blog_holder.masonry article .post_info a:hover,
+	.breadcrumb .current,
+	.breadcrumb a:hover,
+	.portfolio_social_holder a:hover,
+	.latest_post_inner .post_infos a:hover{
+		color: #ffffff;
+	}
+	a:hover,p a:hover,
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,
+.q_tabs .tabs-nav li a:hover,
+.q_icon_with_title .icon_with_title_link:hover,
+.blog_holder article .post_description a:hover,
+.blog_holder.masonry article .post_info a:hover,
+.portfolio_social_holder a:hover,
+.latest_post_inner .post_infos a:hover{
+	color: #efefef;	}
+
 
 	.title .text_above_title {
 		font-family: "Roboto";	}
@@ -660,7 +697,7 @@ input.wpcf7-form-control.wpcf7-submit:not([disabled]),
     background-color: #f3f3f3;color: #0688cd !important    }
 
 .google_map{
-	height: 750px;
+	height: 400px;
 }
 
 
@@ -710,7 +747,7 @@ input.wpcf7-form-control.wpcf7-submit:not([disabled]),
 
 
 	.footer_bottom_holder, #lang_sel_footer{
-		background-color:#005369;
+		background-color:#015b72;
 	}
 
 

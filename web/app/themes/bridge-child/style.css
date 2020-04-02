@@ -16,13 +16,119 @@ p {
     margin-bottom: 15px;
 }
 
-.bbp-login-form fieldset.bbp-form{
+.bbp-login-form fieldset.bbp-form, 
+.bbp_widget_login{
 	border:1px solid #ccc;
 	background:#f4f4f4;
 	padding: 5px 10px;
     font-size: 0.8em;
 }
+.bbp_widget_login .bbp-logged-in h4,
+.bbp_widget_login .bbp-logged-in h4 a{
+	font-size:20px;
+}
 
 
+.whitebox{
+	display:block;
+	padding: 50px 20px;
+
+}
+#bbpress-forums,
+.whitebox{
+	display:block;
+	padding: 30px 15px;
+
+}	
+#bbpress-forums a,
+.whitebox a{
+	color:#141414;
+}
+
+#bbpress-forums::after,
+.whitebox::after {
+  content: "";
+  background: url(images/white_bg.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
 
+body.login,
+body.transparent_content{
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+body.home.transparent_content{
+	background-image:none;
+	background:#22657d;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5{
+	text-shadow: 1px 1px 2px #1f3339;	
+}
+.q_team_name{
+	text-shadow: none;	
+	color:#000;
+}
+
+.whitebox form input[type=text],
+.whitebox form input[type=email],
+.whitebox form select,
+.whitebox form textarea.wpcf7-form-control.wpcf7-textarea{
+	border:1px solid #5495a7 ;
+}
+.whitebox form label{
+	font-weight:600;
+}
+.whitebox form .vc_col-sm-9 label{
+		font-weight:400;
+}
+.whitebox form .wpcf7-checkbox .wpcf7-list-item{
+	clear:both;
+	width:100%;	
+}
+.whitebox form .wpcf7-checkbox .wpcf7-list-item input{
+float:left;	
+margin-right: 7px;
+margin-top: 6px;
+}
+
+fieldset legend{
+	font-weight:800;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:22px;
+		text-shadow: 1px 1px 2px #1f3339;	
+}
+fieldset
+{
+	border: 1px solid #fff !important;
+	margin: 0;
+	xmin-width: 0;
+	padding: 30px;
+	position: relative;
+	border-radius:4px;
+	background-color:transparent;
+	padding-left:10px!important;
+	margin-bottom:30px;
+}
+
+.whitebox .full_section_inner{
+	
+	clear:both;
+	display:block;
+	padding-top:15px;
+}

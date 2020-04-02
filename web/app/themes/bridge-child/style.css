@@ -72,7 +72,16 @@ body.home.transparent_content{
 	background-image:none;
 	background:#22657d;
 }
-
+body.home .header_inner{
+	display:none;
+	
+}
+@media only screen and (max-width: 1000px){
+body.home	.content .container .container_inner.default_template_holder, 
+body.home	.content .container .container_inner.page_container_inner {
+    	padding-top: 0px !important;
+	}
+}
 
 h1,
 h2,

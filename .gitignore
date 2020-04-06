@@ -18,6 +18,8 @@ web/.htaccess
 
 config/backups/
 
+web/app/themes/bridge/css/style_dynamic.css
+web/app/themes/bridge/css/style_dynamic_responsive.css
 
 log/*
 # Dotenv

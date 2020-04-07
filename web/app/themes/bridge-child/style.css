@@ -68,12 +68,14 @@ body.transparent_content{
 	  -o-background-size: cover;
 	  background-size: cover;
 }
+
+/*
 body.home.transparent_content{
 	background-image:none;
 	background:#22657d;
 }
 
-@media only screen and (max-width: 1000px){
+
 	body.home .header_inner{
 		display:none;
 
@@ -82,8 +84,15 @@ body.home	.content .container .container_inner.default_template_holder,
 body.home	.content .container .container_inner.page_container_inner {
     	padding-top: 0px !important;
 	}
+	
+	*/
+
+
+
+@media only screen and (max-width: 1000px){
 }
 
+/*
 h1,
 h2,
 h3,
@@ -96,6 +105,11 @@ h5{
 	color:#000;
 }
 
+*/
+.q_team_name{
+
+	color:#000;
+}
 .whitebox form input[type=text],
 .whitebox form input[type=email],
 .whitebox form select,
@@ -123,7 +137,7 @@ fieldset legend{
 	color:#fff;
 	text-transform:uppercase;
 	font-size:22px;
-		text-shadow: 1px 1px 2px #1f3339;	
+
 }
 fieldset
 {

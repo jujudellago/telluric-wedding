@@ -69,11 +69,15 @@ body.transparent_content{
 	  background-size: cover;
 }
 
-/*
+
 body.home.transparent_content{
 	background-image:none;
-	background:#22657d;
+	background:transparent;
 }
+
+
+/*
+
 
 
 	body.home .header_inner{

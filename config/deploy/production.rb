@@ -1,4 +1,4 @@
-set :stage, :production
+set :stage, :staging
 
 # Simple Role Syntax
 # ==================
@@ -8,18 +8,18 @@ set :stage, :production
 
 # Extended Server Syntax
 # ======================
-server "79.137.41.46", user: 'deploy', roles: %w{web app db}
+server 'bqpm.ftp.sharedbox.com', user: 'bqpm_yabonew', roles: %w{web app db}
+
+set :tmp_dir, "/home/clients/d9e7a0ab00bb20eac180d94da2fe2de6/tmp"
 
 
-#SSHKit.config.command_map[:composer] = "/usr/local/php55/bin/php /home/terolabs/utils/php/composer/composer.phar"
+set :deploy_to, -> { "/home/clients/d9e7a0ab00bb20eac180d94da2fe2de6/telluric" }
+
+#set :linked_files, fetch(:linked_files, []).push('.env','web/app/db.php', 'web/app/object-cache.php', 'web/app/advanced-cache.php')
+
+#SSHKit.config.command_map[:composer] = "php-7.3 /home/clients/d9e7a0ab00bb20eac180d94da2fe2de6/bin/composer/composer.phar"
 
 SSHKit.config.command_map[:wp] ="~/bin/wp.sh"
-
-set :tmp_dir, "/tmp"
-set :linked_files, fetch(:linked_files, []).push('.env','web/app/db.php', 'web/app/object-cache.php', 'web/app/advanced-cache.php')
-
-set :deploy_to, -> { "/var/www/telluric-wedding" }
-
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
@@ -31,16 +31,12 @@ set :deploy_to, -> { "/var/www/telluric-wedding" }
 #    auth_methods: %w(password)
 #  }
 
-fetch(:default_env).merge!(wp_env: :staging)
-
-#set :wpcli_rsync_options, '-avz -e "ssh -p 2222"' 
-
-
+fetch(:default_env).merge!(wp_env: :production)
 
 set :wpcli_remote_url, @secrets_yml['production_url']
 set :wpcli_local_url, @secrets_yml['dev_url']
 
-set :local_tmp_dir, '/tmp'
+set :local_tmp_dir, '/Users/juju/tmp'
 set :wpcli_backup_db, true
 set :wpcli_local_db_backup_dir, 'config/backups'
 set :wpcli_local_uploads_dir, 'web/app/uploads/'

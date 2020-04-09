@@ -19,6 +19,7 @@ set :log_level, :info
 # Apache users with .htaccess files:
 # it needs to be added to linked_files so it persists across deploys:
 #set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess','web/app/advanced-cache.php','web/app/db.php','web/app/object-cache.php')
+set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
 
 
 
